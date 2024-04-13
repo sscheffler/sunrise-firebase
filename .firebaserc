@@ -1,5 +1,14 @@
 {
   "projects": {
-    "default": "test-ac8e1"
+    "default": "sunrise-403413"
+  },
+  "targets": {
+    "sunrise-403413": {
+      "hosting": {
+        "sunrise-firebase": [
+          "sunrise-403413"
+        ]
+      }
+    }
   }
 }

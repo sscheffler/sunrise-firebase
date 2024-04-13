@@ -94,6 +94,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "sunrise-firebase:build:production",
+              "serveTarget": "sunrise-firebase:serve:production"
+            },
+            "development": {
+              "buildTarget": "sunrise-firebase:build:development",
+              "serveTarget": "sunrise-firebase:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
